@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><title>Dallas Center Home Page</title><meta charset="utf-8"><meta name="description" content="The HTML5 Herald"><meta name="author" content="SitePoint"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="DallasCenterHome.css"><script src="DallasCenterHome.js"></script>
+</head>
+
+<body>
+
+<!-- <button onclick="selectBin()"> </button> -->
+
+<h4 id ="HAp"> </h4>
+
+
+<script>
+binMeasurements = fillTable();
+//CALENDER
+                            var dateField0 = "dateField0" ;
+                            document.write('DATE: <input type = "date" id = "dateField0" name = "datefield" onchange="populateSensors(dateField0, binMeasurements[0].bin)"> <br>');
+//RANGE SLIDER
+                            var rangeValue0 = "rangeValue0" ;
+                            document.write('<input type="range" id="rangeValue0" value="0" max = "117" oninput="rangeSlider(rangeValue0, dateField0, binMeasurements[0].bin)"> <br>');
+
+                            document.write('<div class = "binRoof"></div><div class = "bin"><div class = "ch6">6</div> <div class = "ch14">14</div><div class = "ch7">7</div><div class = "ch5">5</div><div class = "ch13">13</div><div class = "ch1">1</div><div class = "ch4">4</div><div class = "ch2">2</div><div class = "ch12">12</div><div class = "ch8">8</div><div class = "ch13">13</div><div class = "ch11">11</div><div class = "ch10">10</div><div class = "ch9">9</div> ');
+//START GRAIN AREA
+                            document.write('<div class = "grain">');
+
+
+                            document.write('<div class = "c6"><div class = "cs96"> - </div><div class = "cs95"> - </div><div class = "cs94"> - </div><div class = "cs93"> - </div><div class = "cs92"> - </div><div class = "cs91"> - </div><div class = "cs90"> - </div><div class = "cs89"> - </div><div class = "cs88"> - </div><div class = "cs87"> - </div><div class = "cs86"> - </div><div class = "cs85"> - </div><div class = "cs84"> - </div><div class = "cs83"> - </div><div class = "cs82"> - </div><div class = "cs81"> - </div>"</div>');
+
+                            document.write('<div class = "c14"><div class = "cs224"> - </div><div class = "cs223"> - </div><div class = "cs222"> - </div><div class = "cs221"> - </div><div class = "cs220"> - </div><div class = "cs219"> - </div><div class = "cs218"> - </div><div class = "cs217"> - </div><div class = "cs216"> - </div><div class = "cs215"> - </div><div class = "cs214"> - </div><div class = "cs213"> - </div><div class = "cs212"> - </div><div class = "cs211"> - </div><div class = "cs210"> - </div><div class = "cs209"> - </div>"</div>');
+
+                            document.write('<div class = "c7"><div class = "cs112"> - </div><div class = "cs111"> - </div><div class = "cs110"> - </div><div class = "cs109"> - </div><div class = "cs108"> - </div><div class = "cs107"> - </div><div class = "cs106"> - </div><div class = "cs105"> - </div><div class = "cs104"> - </div><div class = "cs103"> - </div><div class = "cs102"> - </div><div class = "cs101"> - </div><div class = "cs100"> - </div><div class = "cs99"> - </div><div class = "cs98"> - </div><div class = "cs97"> - </div>"</div>');
+
+                            document.write('<div class = "c5"><div class = "cs80"> - </div><div class = "cs79"> - </div><div class = "cs78"> - </div><div class = "cs77"> - </div><div class = "cs76"> - </div><div class = "cs75"> - </div><div class = "cs74"> - </div><div class = "cs73"> - </div><div class = "cs72"> - </div><div class = "cs71"> - </div><div class = "cs70"> - </div><div class = "cs69"> - </div><div class = "cs68"> - </div><div class = "cs67"> - </div><div class = "cs66"> - </div><div class = "cs65"> - </div>"</div>');
+
+                             document.write('<div class = "c13"><div class = "cs208"> - </div><div class = "cs207"> - </div><div class = "cs206"> - </div><div class = "cs205"> - </div><div class = "cs204"> - </div><div class = "cs203"> - </div><div class = "cs202"> - </div><div class = "cs201"> - </div><div class = "cs200"> - </div><div class = "cs199"> - </div><div class = "cs198"> - </div><div class = "cs197"> - </div><div class = "cs196"> - </div><div class = "cs195"> - </div><div class = "cs194"> - </div><div class = "cs193"> - </div>"</div>');
+
+                            document.write('<div class = "c1"><div class = "cs16"> - </div><div class = "cs15"> - </div><div class = "cs14"> - </div><div class = "cs13"> - </div><div class = "cs12"> - </div><div class = "cs11"> - </div><div class = "cs10"> - </div><div class = "cs9"> - </div><div class = "cs8"> - </div><div class = "cs7"> - </div><div class = "cs6"> - </div><div class = "cs5"> - </div><div class = "cs4"> - </div><div class = "cs3"> - </div><div class = "cs2"> - </div><div class = "cs1"> - </div>"</div>');
+
+                            document.write('<div class = "c4"><div class = "cs64"> - </div><div class = "cs63"> - </div><div class = "cs62"> - </div><div class = "cs61"> - </div><div class = "cs60"> - </div><div class = "cs59"> - </div><div class = "cs58"> - </div><div class = "cs57"> - </div><div class = "cs56"> - </div><div class = "cs55"> - </div><div class = "cs54"> - </div><div class = "cs53"> - </div><div class = "cs52"> - </div><div class = "cs51"> - </div><div class = "cs50"> - </div><div class = "cs49"> - </div>"</div>');
+
+                            document.write('<div class = "c2"><div class = "cs32"> - </div><div class = "cs31"> - </div><div class = "cs30"> - </div><div class = "cs29"> - </div><div class = "cs28"> - </div><div class = "cs27"> - </div><div class = "cs26"> - </div><div class = "cs25"> - </div><div class = "cs24"> - </div><div class = "cs23"> - </div><div class = "cs22"> - </div><div class = "cs21"> - </div><div class = "cs20"> - </div><div class = "cs19"> - </div><div class = "cs18"> - </div><div class = "cs17"> - </div>"</div>');
+
+                            document.write('<div class = "c12"><div class = "cs192"> - </div><div class = "cs191"> - </div><div class = "cs190"> - </div><div class = "cs189"> - </div><div class = "cs188"> - </div><div class = "cs187"> - </div><div class = "cs186"> - </div><div class = "cs185"> - </div><div class = "cs184"> - </div><div class = "cs183"> - </div><div class = "cs182"> - </div><div class = "cs181"> - </div><div class = "cs180"> - </div><div class = "cs179"> - </div><div class = "cs178"> - </div><div class = "cs177"> - </div>"</div>');
+
+                            document.write('<div class = "c8"><div class = "cs128"> - </div><div class = "cs127"> - </div><div class = "cs126"> - </div><div class = "cs125"> - </div><div class = "cs124"> - </div><div class = "cs123"> - </div><div class = "cs122"> - </div><div class = "cs121"> - </div><div class = "cs120"> - </div><div class = "cs119"> - </div><div class = "cs118"> - </div><div class = "cs117"> - </div><div class = "cs116"> - </div><div class = "cs115"> - </div><div class = "cs114"> - </div><div class = "cs113"> - </div>"</div>');
+
+                            document.write('<div class = "c3"><div class = "cs48"> - </div><div class = "cs47"> - </div><div class = "cs46"> - </div><div class = "cs45"> - </div><div class = "cs44"> - </div><div class = "cs43"> - </div><div class = "cs42"> - </div><div class = "cs41"> - </div><div class = "cs40"> - </div><div class = "cs39"> - </div><div class = "cs38"> - </div><div class = "cs37"> - </div><div class = "cs36"> - </div><div class = "cs35"> - </div><div class = "cs34"> - </div><div class = "cs33"> - </div>"</div>');
+
+                            document.write('<div class = "c9"><div class = "cs144"> - </div><div class = "cs143"> - </div><div class = "cs142"> - </div><div class = "cs141"> - </div><div class = "cs140"> - </div><div class = "cs139"> - </div><div class = "cs138"> - </div><div class = "cs137"> - </div><div class = "cs136"> - </div><div class = "cs135"> - </div><div class = "cs134"> - </div><div class = "cs133"> - </div><div class = "cs132"> - </div><div class = "cs131"> - </div><div class = "cs130"> - </div><div class = "cs129"> - </div>"</div>');
+
+                            document.write('<div class = "c11"><div class = "cs176"> - </div><div class = "cs175"> - </div><div class = "cs174"> - </div><div class = "cs173"> - </div><div class = "cs172"> - </div><div class = "cs171"> - </div><div class = "cs170"> - </div><div class = "cs169"> - </div><div class = "cs168"> - </div><div class = "cs167"> - </div><div class = "cs166"> - </div><div class = "cs165"> - </div><div class = "cs164"> - </div><div class = "cs163"> - </div><div class = "cs162"> - </div><div class = "cs161"> - </div>"</div>');
+
+                            document.write('<div class = "c10"><div class = "cs160"> - </div><div class = "cs159"> - </div><div class = "cs158"> - </div><div class = "cs157"> - </div><div class = "cs156"> - </div><div class = "cs155"> - </div><div class = "cs154"> - </div><div class = "cs153"> - </div><div class = "cs152"> - </div><div class = "cs151"> - </div><div class = "cs150"> - </div><div class = "cs149"> - </div><div class = "cs148"> - </div><div class = "cs147"> - </div><div class = "cs146"> - </div><div class = "cs145"> - </div>"</div>');
+
+                            document.write('</div> ');
+
+                            document.write('</div> ');
+
+                            document.write('</div>');
+
+
+
+
+</script>
+
+
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+      </body>
+     </html>
